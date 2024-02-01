@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  tldl:
+    image: tl-dl:latest
+    container_name: tldl
+    restart: unless-stopped
+
+    environment:
+      - OPENAI_API_KEY=YOUR_KEY_HERE
+      - ORIGIN=https://tldl.my-domain.com
